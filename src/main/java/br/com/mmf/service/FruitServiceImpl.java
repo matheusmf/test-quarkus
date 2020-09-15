@@ -46,6 +46,7 @@ public class FruitServiceImpl implements FruitService {
         if(opFruit.isPresent()) {
 			Fruit fruitEntity = opFruit.get();
         	fruitEntity.setName(fruit.getName());
+        	fruitEntity.setLastModifiedBy(fruit.getLastModifiedBy());
         	return fruitEntity;
         } else {
         	throw new WebApplicationException("Fruit with id of " + id.toString() + " does not exist.", Response.Status.NOT_FOUND);

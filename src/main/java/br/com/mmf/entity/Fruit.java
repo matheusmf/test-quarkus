@@ -19,6 +19,10 @@ public class Fruit {
 	private UUID id;
 	
 	private String name;
+	
+	private UUID createdBy;
+	
+	private UUID lastModifiedBy;
 
     public Fruit() {
     }
@@ -51,6 +55,22 @@ public class Fruit {
 
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	public UUID getCreatedBy() {
+		return createdBy;
+	}
+
+	public void setCreatedBy(UUID createdBy) {
+		this.createdBy = createdBy;
+	}
+
+	public UUID getLastModifiedBy() {
+		return lastModifiedBy;
+	}
+
+	public void setLastModifiedBy(UUID lastModifiedBy) {
+		this.lastModifiedBy = lastModifiedBy;
 	}
     
 }
